@@ -1,0 +1,22 @@
+/** components/_title.scss */
+
+.title {
+  margin: 90px 0;
+}
+
+.title__heading, .title__subheading {
+  font-size: 42px;
+}
+
+.title__heading {
+  display: inline;
+  color: black;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.title__subheading {
+  display: inline;
+  color: $color-text;
+  font-weight: 300;
+}

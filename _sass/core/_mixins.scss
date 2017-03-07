@@ -1,0 +1,31 @@
+/** core/_mixins.scss */
+
+/* Breakpoints */
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-wide: 1200px;
+
+/* Responsive Helpers */
+@mixin m-mobile {
+    @media screen and (max-width: $breakpoint-tablet - 1) {
+        @content;
+    }
+}
+
+@mixin m-tablet {
+    @media screen and (min-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin m-desktop {
+    @media screen and (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
+
+@mixin m-wide {
+    @media screen and (min-width: $breakpoint-wide) {
+        @content;
+    }
+}

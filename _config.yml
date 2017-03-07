@@ -20,6 +20,6 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-# Plugins
-gems:
-- jekyll-autoprefixer
+# # Plugins
+# gems:
+# - jekyll-autoprefixer

@@ -1,0 +1,69 @@
+/** components/_projects.scss */
+
+.project {
+  background-color: rgb(240, 240, 245);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  min-height: 320px;
+  margin-bottom: 30px;
+}
+
+.project__title {
+
+}
+
+.project__heading {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  display: block;
+}
+
+.project__subheading {
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.project__link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+  transition: 0.3s ease-in-out all;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    content: '→';
+    opacity: 0;
+    transition: 0.3s ease-in-out opacity;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
+  &:hover {
+    padding-left: 18px;
+    border-bottom: 1px solid black;
+  }
+}
+
+.project-cat {
+  list-style: none;
+  padding: 0;
+}
+
+.project-cat__item {
+  display: inline-block;
+  // padding: 6px;
+  // background-color: rgb(220, 220, 220);
+
+  & + &:before {
+    content: "/";
+    margin: 0 5px 0 2px;
+  }
+}

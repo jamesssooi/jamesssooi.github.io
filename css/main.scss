@@ -5,3 +5,15 @@
 
 // Normalize
 @import "core/normalize";
+
+// core
+@import "core/colors";
+@import "core/mixins";
+@import "core/layout";
+@import "core/typography";
+
+// components
+@import "components/title";
+@import "components/section";
+@import "components/projects";
+@import "components/oss";
