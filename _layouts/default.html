@@ -5,86 +5,11 @@
 
   <body>
 
-    <header class="container">
-      <div class="title">
-        <h1 class="title__heading">James Ooi.</h1>&nbsp;
-        <span class="title__subheading">Lorem ipsum dolor sit amet conseqtur dilis adispicing elit.</span>
-      </div>
-    </header>
+    <div class="container">
+      {{ content }}
+    </div>
 
-    <section id="works" class="section container">
-      <span class="section__heading">Selected Works</span>
-
-      <div class="project">
-        <div class="project__title">
-          <span class="project__heading">SunwaySA Bookings</span>
-          <span class="project__subheading">Making spaces more accessible.</span>
-          <a class="project__link" href="#">View Case Study</a>
-          <!--<ul class="project-cat">
-            <li class="project-cat__item">Web Development</li>
-            <li class="project-cat__item">UX Design</li>
-          </ul>-->
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project__title">
-          <span class="project__heading">Humanising Maybank2u</span>
-          <span class="project__subheading">Making spaces more accessible.</span>
-          <a class="project__link" href="#">View Case Study</a>
-          <!--<ul class="project-cat">
-            <li class="project-cat__item">Web Development</li>
-            <li class="project-cat__item">UX Design</li>
-          </ul>-->
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project__title">
-          <span class="project__heading">WhatsApp</span>
-          <span class="project__subheading">Making spaces more accessible.</span>
-          <a class="project__link" href="#">View Case Study</a>
-          <!--<ul class="project-cat">
-            <li class="project-cat__item">Web Development</li>
-            <li class="project-cat__item">UX Design</li>
-          </ul>-->
-        </div>
-      </div>
-    </section>
-
-    <section id="oss" class="section container">
-      <span class="section__heading">Open Source</span>
-      
-      <div class="oss">
-        <div class="oss__content">
-          <div class="oss__title">
-            <span class="oss__heading">Croppr.js</span>
-            <span class="oss__language">Javascript</span>
-            <span class="oss__badge"><i class="fa fa-star"></i> 4</span>
-            <span class="oss__badge"><i class="fa fa-eye"></i> 2</span>
-          </div>
-          <span class="oss__description">
-            A vanilla JavaScript image cropper that's lightweight, 
-            awesome,and has absolutely zero dependencies.
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer section container">
-      <span class="footer__email">wengteikooi@gmail.com</span>
-      <ul class="footer__links">
-        <li class="footer__link-item">
-          <a href="#" class="footer__link-anchor">Resumé</a>
-        </li>
-        <li class="footer__link-item">
-          <a href="#" class="footer__link-anchor">Instagram</a>
-        </li>
-        <li class="footer__link-item">
-          <a href="#" class="footer__link-anchor">GitHub</a>
-        </li>
-      </ul>
-    </footer>
+    {% include footer.html %}
 
   </body>
 
