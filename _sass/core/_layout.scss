@@ -21,8 +21,8 @@ html {
 
   @include m-mobile {
     width: $container-mobile;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   @include m-tablet { width: $container-tablet; }
   @include m-desktop { width: $container-desktop; }

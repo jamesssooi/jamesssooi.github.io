@@ -1,13 +1,22 @@
 article {
-  font-size: 22px;
-  padding: 0 60px;
+
+  font-size: 18px;
+
+  @include m-desktop {
+    font-size: 22px;
+    padding: 0 60px;
+  }
 }
 
 article img {
-  width: calc(100% + 120px);
-  margin-left: calc(-60px);
-  margin-right: calc(-60px);
+  width: 100%;
   margin-bottom: 1.5em;
+
+  @include m-desktop {
+    width: calc(100% + 120px);
+    margin-left: calc(-60px);
+    margin-right: calc(-60px);
+  }
 }
 
 article p {
@@ -16,7 +25,7 @@ article p {
 }
 
 article h2 {
-  font-size: 42px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: black;
   text-align: center;

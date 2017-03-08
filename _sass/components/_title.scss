@@ -19,7 +19,11 @@
 }
 
 .title__heading, .title__subheading {
-  font-size: 42px;
+  font-size: 36px;
+
+  @include m-tablet {
+    font-size: 42px;
+  }
 }
 
 .title__heading {
