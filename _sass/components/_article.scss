@@ -1,0 +1,33 @@
+article {
+  font-size: 22px;
+  padding: 0 60px;
+}
+
+article img {
+  width: calc(100% + 120px);
+  margin-left: calc(-60px);
+  margin-right: calc(-60px);
+  margin-bottom: 1.5em;
+}
+
+article p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+article h2 {
+  font-size: 42px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: 3em;
+}
+
+article .description {
+  max-width: 600px;
+  margin: 0 auto 1em;
+}
+
+.u-fl-left {
+  float: left;
+}

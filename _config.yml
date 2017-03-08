@@ -17,6 +17,22 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+# Collections
+collections:
+  works:
+    output: true
+    permalink: /works/:title
+    values:
+      layout: work
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: works
+    values:
+      layout: work
+
 # Build settings
 markdown: kramdown
 

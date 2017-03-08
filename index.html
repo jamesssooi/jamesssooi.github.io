@@ -2,21 +2,21 @@
 layout: default
 ---
 
-<header>
+<header class="container">
   <div class="title">
     <h1 class="title__heading">James Ooi.</h1>&nbsp;
     <span class="title__subheading">Lorem ipsum dolor sit amet conseqtur dilis adispicing elit.</span>
   </div>
 </header>
 
-<section id="works" class="section">
-  <span class="section__heading">Selected Works</span>
+<section id="works" class="section container">
+  <!--<span class="section__heading">Selected Works</span>-->
 
   <div class="project">
     <div class="project__title">
       <span class="project__heading">SunwaySA Bookings</span>
       <span class="project__subheading">Making spaces more accessible.</span>
-      <a class="project__link" href="#">View Case Study</a>
+      <a class="project__link" href="{{ site.works[0].url }}">View Case Study</a>
       <!--<ul class="project-cat">
         <li class="project-cat__item">Web Development</li>
         <li class="project-cat__item">UX Design</li>
@@ -41,7 +41,7 @@ layout: default
   </div>
 </section>
 
-<section id="oss" class="section">
+<section id="oss" class="section container">
   <span class="section__heading">Open Source</span>
   
   <div class="oss">

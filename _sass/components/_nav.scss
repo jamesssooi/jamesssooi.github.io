@@ -1,0 +1,44 @@
+/** components/_footer.scss */
+
+.nav {
+  margin-top: 30px;
+  display: flex;
+}
+
+.nav__title {
+  font-weight: bold;
+  color: black;
+  font-size: 24px;
+}
+
+.nav__links {
+  list-style: none;
+  padding-left: 0;
+  margin-left: auto;
+}
+
+.nav__link-item {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+
+  & + & {
+    margin-left: 30px;
+  }
+
+  &:hover {
+    border-bottom: 2px solid black;
+  }
+
+  &:hover .nav__link-anchor {
+    color: black;
+  }
+}
+
+.nav__link-anchor {
+  color: $color-text;
+}

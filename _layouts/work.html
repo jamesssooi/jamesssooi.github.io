@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="title title--centered">
+    <span class="title__type">{{ page.type }}</span>
+    <h1 class="title__heading">{{ page.title }}</h1><br />
+    <span class="title__subheading">{{ page.subtitle }}</span>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+
+    <img src="{{ page.cover_url }}" alt="Landscape">
+
+    <div class="project-info">
+      <div class="project-info__desc">
+        <p>{{ page.description }}</p>
+      </div>
+      <div class="project-info__details">
+        <div class="project-detail">
+          <span class="project-detail__heading">Responsibilities</span>
+          <span class="project-detail__content">
+            {% for item in page.responsibilities %}
+              {{ item }}&emsp;
+            {% endfor %}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    {{ page.content }}
+
+  </article>
+</div>

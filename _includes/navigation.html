@@ -1,6 +1,8 @@
-<footer class="footer section container">
+<nav class="nav container">
 
-  <span class="footer__email">wengteikooi@gmail.com</span>
+  {% if page.url != '/' %}
+  <a class="nav__title" href="/" alt="Home">James Ooi</a>
+  {% endif %}
 
   <ul class="nav__links">
     <li class="nav__link-item">
@@ -14,4 +16,4 @@
     </li>
   </ul>
 
-</footer>
+</nav>
