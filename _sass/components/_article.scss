@@ -8,7 +8,9 @@ article {
   }
 }
 
+/** Media */
 article img, article video {
+  display: block;
   width: 100%;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -27,6 +29,17 @@ article img + em {
   text-align: center;
 }
 
+article img.image--left {
+
+  @include m-desktop {
+    width: 320px;
+    float: left;
+    margin: 0 1em 0 -60px;
+  }
+}
+
+
+/** Typography */
 article p {
   margin-bottom: 1em;
   line-height: 1.6;
