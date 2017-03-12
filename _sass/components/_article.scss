@@ -8,8 +8,9 @@ article {
   }
 }
 
-article img {
+article img, article video {
   width: 100%;
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
 
   @include m-desktop {
@@ -17,6 +18,13 @@ article img {
     margin-left: calc(-60px);
     margin-right: calc(-60px);
   }
+}
+
+article img + em {
+  margin-top: -1.5em;
+  display: block;
+  font-size: 16px;
+  text-align: center;
 }
 
 article p {
@@ -32,9 +40,66 @@ article h2 {
   margin-top: 3em;
 }
 
+article h3 {
+  text-align: center;
+  margin-top: 2em;
+}
+
 article .description {
   max-width: 600px;
   margin: 0 auto 1em;
+}
+
+article blockquote {
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  background-color: rgb(240, 240, 245);
+  padding: 24px;
+  margin: 2em 0;
+
+  @include m-desktop {
+    font-size: 30px;
+    width: calc(100% + 120px);
+    margin-left: calc(-60px);
+    margin-right: calc(-60px);
+  }
+}
+
+article blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+article .list--titled li {
+  margin-bottom: 1em;
+}
+
+article .list--circled ol {
+  counter-reset: item;
+  margin: 0;
+  padding-left: 0;
+}
+
+article .list--circled ol li {
+  counter-increment: item;
+  list-style: none inside;
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+article .list--circled ol li:before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 1px solid $color-text;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .u-fl-left {
