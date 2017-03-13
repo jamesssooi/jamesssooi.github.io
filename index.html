@@ -1,5 +1,9 @@
 ---
 layout: default
+projectSequence:
+  - "sunwaysa-bookings"
+  - "maybank2u"
+  - "whatsapp"
 ---
 
 <header class="container">
@@ -12,33 +16,47 @@ layout: default
 <section id="works" class="section container">
   <!--<span class="section__heading">Selected Works</span>-->
 
-  <div class="project">
-    <div class="project__title">
-      <span class="project__heading">SunwaySA Bookings</span>
-      <span class="project__subheading">Making spaces more accessible.</span>
-      <a class="project__link" href="{{ site.works[0].url }}">View Case Study</a>
-      <!--<ul class="project-cat">
-        <li class="project-cat__item">Web Development</li>
-        <li class="project-cat__item">UX Design</li>
-      </ul>-->
-    </div>
-  </div>
+  {% for workId in page.projectSequence %}
+    {% for value in site.works %}
+      {% if value.identifier == workId %} {% assign work = value %} {% endif %}
+    {% endfor %}
 
-  <div class="project">
-    <div class="project__title">
-      <span class="project__heading">Humanising Maybank2u</span>
-      <span class="project__subheading">Making spaces more accessible.</span>
-      <a class="project__link" href="#">View Case Study</a>
-    </div>
-  </div>
+    <style>
+      /* Mobile */
+      @media screen and (max-width: 767px) {
+        #project-{{ workId }}.project { background-image: url({{ work.card.mobile }})}
+      }
 
-  <div class="project">
-    <div class="project__title">
-      <span class="project__heading">WhatsApp</span>
-      <span class="project__subheading">Making spaces more accessible.</span>
-      <a class="project__link" href="#">View Case Study</a>
+      /* Tablet */
+      @media screen and (min-width: 768px) {
+        #project-{{ workId }}.project { background-image: url({{ work.card.tablet }})}
+      }
+      @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        #project-{{ workId }}.project { background-image: url({{ work.card.desktop_retina }})}
+      }
+
+      /* Desktop */
+      @media screen and (min-width: 992px) {
+        #project-{{ workId }}.project { background-image: url({{ work.card.desktop }})}
+      }
+      @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        #project-{{ workId }}.project { background-image: url({{ work.card.desktop_retina }})}
+      }
+    </style>
+
+    <div class="project" id="project-{{workId}}">
+      <div class="project__title">
+        <span class="project__heading">{{ work.title }}</span>
+        <span class="project__subheading">{{ work.subtitle }}</span>
+        <a class="project__link" href="{{ work.url }}">View {{ work.type }}</a>
+        <!--<ul class="project-cat">
+          <li class="project-cat__item">Web Development</li>
+          <li class="project-cat__item">UX Design</li>
+        </ul>-->
+      </div>
     </div>
-  </div>
+  {% endfor %}
+  
 </section>
 
 <section id="oss" class="section container">

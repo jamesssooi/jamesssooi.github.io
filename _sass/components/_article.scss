@@ -30,12 +30,21 @@ article img + em {
 }
 
 article img.image--left {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include m-desktop {
     width: 320px;
     float: left;
     margin: 0 1em 0 -60px;
   }
+}
+
+article img.image--centered {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
 }
 
 
@@ -113,8 +122,4 @@ article .list--circled ol li:before {
   text-align: center;
   font-size: 14px;
   line-height: 24px;
-}
-
-.u-fl-left {
-  float: left;
 }

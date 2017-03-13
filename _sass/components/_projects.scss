@@ -2,6 +2,9 @@
 
 .project {
   background-color: rgb(240, 240, 245);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%;
   padding: 30px;
   display: flex;
   align-items: center;
@@ -10,7 +13,10 @@
 }
 
 .project__title {
-
+  width: 320px;
+  @include m-desktop {
+    width: 600px;
+  }
 }
 
 .project__heading {
