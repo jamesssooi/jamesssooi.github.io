@@ -9,8 +9,8 @@ card:
   mobile: /assets/works/whatsapp/card_mobile.png
   tablet: /assets/works/whatsapp/card_tablet.png
   tablet_retina: /assets/works/whatsapp/card_tablet@2x.png
-  desktop: /assets/works/whatsapp/card.png
-  desktop_retina: /assets/works/whatsapp/card@2x.png
+  desktop: /assets/works/whatsapp/card_desktop.png
+  desktop_retina: /assets/works/whatsapp/card_desktop@2x.png
 description: >
   <strong class="project-inline-title">WhatsApp</strong> is an instant messaging app with over 1 billion users in 180 countries. This project is part of an assignment submission for my COM3134 Corporate Identity Design class, where the brief was to inject fun to an existing brand. As a result, this rebranding of WhatsApp injects elements of fun and play into their brand, while maintaining their existing look.
 responsibilities:
