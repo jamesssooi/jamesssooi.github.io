@@ -37,6 +37,3 @@ markdown: kramdown
 # Plugins
 gems:
 - jekyll-autoprefixer
-
-autoprefixer:
-  only_production: true
