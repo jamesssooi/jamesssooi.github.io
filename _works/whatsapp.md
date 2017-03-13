@@ -64,4 +64,4 @@ The result is a highly personalized business card that includes the employee as 
 
 A full brand style guide was created to ensure consistent brand communication across all their marketing and communication channels, and to maintain brand integrity. The brand guide contains guidelines on how to use the brand assets and brand elements consistently and properly.
 
-A full PDF of the brand guide can be downloaded [here](#).
+A full PDF of the brand guide can be downloaded [here](/assets/works/whatsapp/whatsapp-brand-guidelines.pdf).
