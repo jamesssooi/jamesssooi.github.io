@@ -1,8 +1,15 @@
 ---
+identifier: sunwaysa-bookings
 title: SunwaySA Bookings
 subtitle: Making spaces more accessible.
 type: Case Study
 cover_url: /assets/works/sunwaysa-bookings/booking.png
+card:
+  mobile: /assets/works/sunwaysa-bookings/card_mobile.png
+  tablet: /assets/works/sunwaysa-bookings/card_tablet.png
+  tablet_retina: /assets/works/sunwaysa-bookings/card_tablet@2x.png
+  desktop: /assets/works/sunwaysa-bookings/card_desktop.png
+  desktop_retina: /assets/works/sunwaysa-bookings/card_desktop@2x.png
 description: >
   <strong class="project-inline-title">SunwaySA Bookings</strong> is an online booking platform focusing on delivering a seamless, simple and convenient booking experience. It was developed as part of my tenure in the Sunway University Student Council where I led this project.
 responsibilities:
