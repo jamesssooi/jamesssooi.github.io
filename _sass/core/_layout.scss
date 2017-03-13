@@ -1,0 +1,30 @@
+/** core/_layout.scss */
+
+/** Variables */
+$container-mobile: 100%;
+$container-tablet: 720px;
+$container-desktop: 960px;
+$container-wide: 960px;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include m-mobile {
+    width: $container-mobile;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include m-tablet { width: $container-tablet; }
+  @include m-desktop { width: $container-desktop; }
+  @include m-wide { width: $container-wide; }
+}

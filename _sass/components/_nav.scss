@@ -1,0 +1,56 @@
+/** components/_footer.scss */
+
+.nav {
+  margin-top: 30px;
+  display: flex;
+  @include m-mobile {
+    justify-content: center;
+  }
+}
+
+.nav__title {
+  font-weight: bold;
+  color: black;
+  font-size: 24px;
+
+  &:hover {
+    background-color: transparent;
+    text-decoration: none;
+  }
+}
+
+.nav__links {
+  list-style: none;
+  padding-left: 0;
+  margin-left: auto;
+
+  @include m-mobile {
+    display: none;
+  }
+}
+
+.nav__link-item {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+
+  & + & {
+    margin-left: 30px;
+  }
+
+}
+
+.nav__link-anchor {
+  color: $color-text;
+  
+  &:hover {
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+  }
+}

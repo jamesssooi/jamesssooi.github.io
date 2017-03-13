@@ -1,0 +1,77 @@
+/** components/_title.scss */
+
+.page-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+
+  &--white { color: white; }
+  &--black { color: black; }
+}
+
+.title {
+  margin: 90px 0;
+  position: relative;
+  
+  &--centered {
+    text-align: center;
+  }
+}
+
+.title__heading, .title__subheading {
+  font-size: 36px;
+
+  @include m-tablet {
+    font-size: 42px;
+  }
+}
+
+.title__heading {
+  display: inline;
+  color: black;
+  font-weight: bold;
+  margin-right: 6px;
+
+  &--block {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
+.title__subheading {
+  display: inline;
+  color: $color-text;
+  font-weight: 300;
+}
+
+.title__back {
+  position: absolute;
+  top: -2em;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $color-text;
+  transition: 0.3s ease-in-out all;
+  color: $color-text;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    content: '←';
+    opacity: 0;
+    transition: 0.3s ease-in-out opacity;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
+  &:hover {
+    padding-left: 18px;
+    border-bottom: 1px solid black;
+  }
+}
+
+.title__type {
+  display: block;
+  margin-bottom: 1em;
+}

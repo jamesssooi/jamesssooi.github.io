@@ -1,0 +1,77 @@
+/** components/_project-page.scss */
+
+.project-cover {
+  margin-top: 0;
+}
+
+.project-info {
+
+}
+
+.project-info__desc {
+  //padding-right: 60px;
+}
+
+.project-info__details {
+  // min-width: 240px;
+  // margin-left: auto;
+}
+
+.project-detail {
+  margin-bottom: 24px;
+}
+
+.project-detail__heading {
+  font-weight: bold;
+  display: block;
+  color: black;
+}
+
+.project-detail__content {
+
+}
+
+
+/** Project Inline Title */
+.project-inline-title {
+  color: black;
+}
+
+
+/** Project Results */
+.project-results {
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  @include m-tablet {
+    display: flex;
+    // justify-content: space-around;
+  }
+
+  @include m-desktop {
+    width: calc(100% + 120px);
+    margin-left: calc(-60px);
+    margin-right: calc(-60px);
+  }
+}
+
+.project-results__item {
+  text-align: center;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.project-results__figure {
+  display: block;
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 6px;
+  color: black;
+}
+
+.project-results__label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}

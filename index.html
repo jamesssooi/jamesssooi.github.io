@@ -1,23 +1,86 @@
 ---
 layout: default
+projectSequence:
+  - "sunwaysa-bookings"
+  - "maybank2u"
+  - "whatsapp"
 ---
 
-<div class="home">
+<header class="container">
+  <div class="title">
+    <h1 class="title__heading">James Ooi.</h1>&nbsp;
+    <span class="title__subheading">UI/UX Designer and Web Developer driven by the passion to make things that work well.</span>
+  </div>
+</header>
 
-  <h1 class="page-heading">Posts</h1>
+<section id="works" class="section container">
+  <!--<span class="section__heading">Selected Works</span>-->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+  {% for workId in page.projectSequence %}
+    {% for value in site.works %}
+      {% if value.identifier == workId %} {% assign work = value %} {% endif %}
     {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <style>
+      /* Mobile */
+      @media screen and (max-width: 767px) {
+        #project-{{ workId }}.project { background-image: url({{ work.card.mobile }})}
+      }
 
-</div>
+      /* Tablet */
+      @media screen and (min-width: 768px) {
+        #project-{{ workId }}.project { background-image: url({{ work.card.tablet }})}
+      }
+      @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        #project-{{ workId }}.project { background-image: url({{ work.card.desktop_retina }})}
+      }
+
+      /* Desktop */
+      @media screen and (min-width: 992px) {
+        #project-{{ workId }}.project { background-image: url({{ work.card.desktop }})}
+      }
+      @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        #project-{{ workId }}.project { background-image: url({{ work.card.desktop_retina }})}
+      }
+    </style>
+
+    <a id="project-{{workId}}" class="project" href="{{ work.url }}">
+      <div class="project__title">
+        <span class="project__heading">{{ work.title }}</span>
+        <span class="project__subheading">{{ work.subtitle }}</span>
+        <span class="project__link">View {{ work.type }}</span>
+      </div>
+    </a>
+
+    <!--<div class="project__title">
+      <span class="project__heading">{{ work.title }}</span>
+      <span class="project__subheading">{{ work.subtitle }}</span>
+      <a class="project__link" href="{{ work.url }}">View {{ work.type }}</a>
+    </div>-->
+  {% endfor %}
+
+  <!--<ul class="project-cat">
+    <li class="project-cat__item">Web Development</li>
+    <li class="project-cat__item">UX Design</li>
+  </ul>-->
+  
+</section>
+
+<section id="oss" class="section container">
+  <span class="section__heading">Open Source</span>
+  
+  <a class="oss" href="https://jamesssooi.github.io/Croppr.js/" target="_blank">
+    <div class="oss__content">
+      <div class="oss__title">
+        <span class="oss__heading">Croppr.js</span>
+        <span class="oss__language">Javascript</span>
+        <span class="oss__badge"><i class="fa fa-star"></i> 4</span>
+        <span class="oss__badge"><i class="fa fa-eye"></i> 2</span>
+      </div>
+      <span class="oss__description">
+        A vanilla JavaScript image cropper that's lightweight, 
+        awesome,and has absolutely zero dependencies.
+      </span>
+    </div>
+  </a>
+</section>

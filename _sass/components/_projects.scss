@@ -1,0 +1,83 @@
+/** components/_projects.scss */
+
+.project {
+  background-color: rgb(240, 240, 245);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%;
+  min-height: 320px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(230, 230, 235);
+    background-position: right -10px top;
+    text-decoration: none;
+  }
+
+  &:hover .project__link:before {
+    opacity: 1;
+  }
+
+  &:hover .project__link {
+    padding-left: 18px;
+    border-bottom: 1px solid black;
+  }
+}
+
+.project__title {
+  width: 320px;
+  @include m-desktop {
+    width: 600px;
+  }
+}
+
+.project__heading {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  display: block;
+}
+
+.project__subheading {
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.project__link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+  transition: 0.3s ease-in-out all;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    content: '→';
+    opacity: 0;
+    transition: 0.3s ease-in-out opacity;
+  }
+}
+
+.project-cat {
+  list-style: none;
+  padding: 0;
+}
+
+.project-cat__item {
+  display: inline-block;
+  // padding: 6px;
+  // background-color: rgb(220, 220, 220);
+
+  & + &:before {
+    content: "/";
+    margin: 0 5px 0 2px;
+  }
+}
