@@ -39,7 +39,9 @@ To achieve this, we first looked on the web for existing solutions that met our 
 ## The Experience
 
 ### Intuitive time selection
-One of the most, if not the most important element of any booking system is the UI component to select the booking slots. We wanted a component that was easy to use, fast, and less prone to errors. After multiple rounds of prototyping and testing with dozens of users, we settled on this:
+One of the most, if not the most important element of any booking system is the UI component to select the booking slots. We wanted a component that was easy to use, fast, and less prone to errors. 
+
+Multiple prototypes were created using AngularJS itself (should've used a prototyping tool in hindsight, heh). These prototypes were tested among dozens of users, with each of them given a specific scenario and goal to achieve. After multiple iterations, we found that the following worked the best:
 
 <video src="/assets/works/sunwaysa-bookings/time-selector.mp4" preload autoplay loop></video>
 
@@ -54,7 +56,7 @@ One of the most, if not the most important element of any booking system is the 
 </div>
 
 ### Seamless approval, or lack thereof
-Existing booking systems used by the university require explicit approval from the administrators. They were of course to verify the authenticity of the booking and the user, and to prevent unnecessary abuse of the facilities. But this introduced a long period of uncertainty for the user in between the time the request was made, and the time the booking was (possibly) approved.
+Existing booking systems used by the university require explicit approval from the administrators. They were needed to verify the authenticity of the booking and the user, and to prevent unnecessary abuse of the facilities. But this introduced a long period of uncertainty for the user in between the time the request was made, and the time the booking was (possibly) approved.
 
 Our solution to this was to skip the need for approval altogether in the booking process. Achieving this required a huge concerted effort from behind the scenes, such as:
 
@@ -64,18 +66,18 @@ Our solution to this was to skip the need for approval altogether in the booking
 2. **Active moderation of the system**<br />
    These automatic validations however, can only do so much. To detect any other fringe cases of abuse, we rely on actively moderating the system. To assist with that, a [Telegram](https://telegram.org/) bot was developed to report on the activities in the system, allowing us to be easily notified of any odd behaviours.
 3. **Tightly controlled user privileges**<br />
-   Lastly, the access to the system is tightly controlled. While all students of the university can register to make bookings, they are limited to stricter—but still reasonable—limitations. These limitations manifest as lesser maximum hours and smaller range of bookable days. Students which require greater booking privileges (such as leaders of societies) have the option to request to increase their limits. Essentially, we moved the approval process from booking creation to here, and it only has to happen once!
+   Lastly, the access to the system is controlled. While all students of the university can register to make bookings, they are limited to stricter—but still reasonable—limitations. These limitations manifest as lesser maximum hours and smaller range of bookable days. Students which require greater booking privileges (such as leaders of societies) have the option to request to increase their limits via a simple form. Essentially, we moved the approval process from booking creation to here, and it only has to happen once!
 </div>
 
-![Confirmation screen](/assets/works/sunwaysa-bookings/confirmation.png)
-
 The result is a seamless and fast booking experience for the user. All bookings made on the platform is automatically approved and is greeted with a large confirmation screen affirming the user of their booking slots. And when it's their slot, they would find that the room is ready and available for their use.
+
+![Confirmation screen](/assets/works/sunwaysa-bookings/confirmation.png)
 
 ### Other little things
 A scenario we often noticed at the end of meetings is a small little discussion to decide on the next meeting date. Sometimes, this decision is based on the availability of meeting rooms. To help streamline this process, we made the time selection page public facing, rather than hidden behind a login protected page. That's one minute less of being stuck in a meeting!
 
 
-This seamless, simple and convenient booking experience doesn't just exist on the desktop. The entire site is responsive to all kinds of devices. The result is a booking platform that offers a great experience whenever and wherever you are.
+This seamless, simple and convenient booking experience also doesn't just exist on the desktop, but was made to be responsive to all kinds of devices. The result is a booking platform that offers a great experience whenever and wherever you are.
 
 ![Responsive views](/assets/works/sunwaysa-bookings/responsive.png)
 
@@ -87,7 +89,7 @@ The front-end is a single page application made using [AngularJS](https://angula
 The front-end and back-end communicates via a REST API, and authentication is performed via stateless JSON Web Tokens. Security was always our top priority by enabling HTTPS and salting + hashing passwords. These stateless, API driven development helped to create a modular codebase that's more easier to test, maintain and reason with.
 
 ## The Results
-SunwaySA Bookings is actively used by hundreds of students in Sunway University for their meetings, discussions and activities. To date, it has recorded more than 6000 bookings within 1.5 years of launching, which is an average of eleven bookings made per day! It has helped made private spaces more accessible to both students and student leaders than ever before.
+SunwaySA Bookings is actively used by hundreds of students in Sunway University for their meetings, discussions and activities everyday. To date, it has recorded more than 6000 bookings within 1.5 years of launching, which is an average of eleven bookings made per day! It has helped made private spaces more accessible to both students and student leaders than ever before.
 
 As of now, it is currently used by both the Sunway University Student Council and Management to efficiently manage the Student Hub with four bookable spaces.
 
@@ -116,7 +118,7 @@ As of now, it is currently used by both the Sunway University Student Council an
 
 To achieve the experience that we were aiming for, it required a concerted effort from all layers of the platform. The user interface is only part of the solution, and not the answer.
 
-The entire end-to-end experience has to be considered and carefully designed, from how the user discovers the service to how the user physically accesses his or her booked room. Furthermore, the administration and bureaucracy had to be planned around the specific experience we were aiming for, rather than the other way round.
+The entire end-to-end experience has to be considered and carefully designed — from how the user discovers the service to how the user physically accesses his or her booked room. Furthermore, the administration and bureaucracy had to be planned around the specific experience we were aiming for, rather than the other way round.
 
 ![Home page](/assets/works/sunwaysa-bookings/home.png)
 *Home page*

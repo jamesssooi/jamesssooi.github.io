@@ -35,7 +35,7 @@ This new logo strives to maintain existing elements from the previous logo as to
 
 ### Emoji Swarm
 ![Emoji Swarm](/assets/works/whatsapp/emoji-swarm.png)
-WhatsApp has a fun, expressive and dynamic corporate culture, and we feel that should be shown in the brand. Emojis has always been a part of their history. WhatsApp was the platform where emoji initially gained traction, and it is still the platform where many users use emojis to express themselves the most.
+WhatsApp has a fun, expressive and dynamic corporate culture, and we feel that should be shown in the brand. Emojis has always been a part of their history. WhatsApp was the platform where emojis initially gained traction, and it is still the platform where many users use emojis to express themselves the most.
 
 **Emoji Swarm** is our solution in communicating not only about their users and their history, but also about their corporate culture. It is a swarm of emojis that serves as a design element in our communication materials. It represents human connection and expression. The Emoji Swarm system should be present in all external marketing communication materials. It is:
 
@@ -62,6 +62,6 @@ The result is a highly personalized business card that includes the employee as 
 ### Brand Guidelines
 ![Style guide](/assets/works/whatsapp/style-guide.png)
 
-A full brand style guide was created to ensure consistent brand communication across all their marketing and communication channels, and to maintain brand integrity. The brand guide contains guidelines on how to use the brand assets and brand elements consistently and properly.
+A full brand guidelines was created to ensure consistent brand communication across all their marketing and communication channels and to maintain brand integrity. The brand guide contains guidelines on how to use the brand assets and brand elements consistently and properly.
 
-A full PDF of the brand guide can be downloaded [here](/assets/works/whatsapp/whatsapp-brand-guidelines.pdf).
+A full PDF of the brand guidelines can be downloaded [here](/assets/works/whatsapp/whatsapp-brand-guidelines.pdf).
