@@ -5,11 +5,28 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto 100%;
+  min-height: 320px;
   padding: 30px;
   display: flex;
   align-items: center;
-  min-height: 320px;
   margin-bottom: 30px;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(230, 230, 235);
+    background-position: right -10px top;
+    text-decoration: none;
+  }
+
+  &:hover .project__link:before {
+    opacity: 1;
+  }
+
+  &:hover .project__link {
+    padding-left: 18px;
+    border-bottom: 1px solid black;
+  }
 }
 
 .project__title {
@@ -46,17 +63,6 @@
     content: '→';
     opacity: 0;
     transition: 0.3s ease-in-out opacity;
-  }
-
-  &:hover:before {
-    opacity: 1;
-  }
-
-  &:hover {
-    padding-left: 18px;
-    border-bottom: 1px solid black;
-    text-decoration: none;
-    background-color: transparent;
   }
 }
 

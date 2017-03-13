@@ -9,7 +9,7 @@ projectSequence:
 <header class="container">
   <div class="title">
     <h1 class="title__heading">James Ooi.</h1>&nbsp;
-    <span class="title__subheading">Lorem ipsum dolor sit amet conseqtur dilis adispicing elit.</span>
+    <span class="title__subheading">UI/UX Designer and Web Developer driven by the passion to make things that work well.</span>
   </div>
 </header>
 
@@ -44,25 +44,32 @@ projectSequence:
       }
     </style>
 
-    <div class="project" id="project-{{workId}}">
+    <a id="project-{{workId}}" class="project" href="{{ work.url }}">
       <div class="project__title">
         <span class="project__heading">{{ work.title }}</span>
         <span class="project__subheading">{{ work.subtitle }}</span>
-        <a class="project__link" href="{{ work.url }}">View {{ work.type }}</a>
-        <!--<ul class="project-cat">
-          <li class="project-cat__item">Web Development</li>
-          <li class="project-cat__item">UX Design</li>
-        </ul>-->
+        <span class="project__link">View {{ work.type }}</span>
       </div>
-    </div>
+    </a>
+
+    <!--<div class="project__title">
+      <span class="project__heading">{{ work.title }}</span>
+      <span class="project__subheading">{{ work.subtitle }}</span>
+      <a class="project__link" href="{{ work.url }}">View {{ work.type }}</a>
+    </div>-->
   {% endfor %}
+
+  <!--<ul class="project-cat">
+    <li class="project-cat__item">Web Development</li>
+    <li class="project-cat__item">UX Design</li>
+  </ul>-->
   
 </section>
 
 <section id="oss" class="section container">
   <span class="section__heading">Open Source</span>
   
-  <div class="oss">
+  <a class="oss" href="https://jamesssooi.github.io/Croppr.js/" target="_blank">
     <div class="oss__content">
       <div class="oss__title">
         <span class="oss__heading">Croppr.js</span>
@@ -75,5 +82,5 @@ projectSequence:
         awesome,and has absolutely zero dependencies.
       </span>
     </div>
-  </div>
+  </a>
 </section>

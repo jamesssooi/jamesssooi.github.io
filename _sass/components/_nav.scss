@@ -42,15 +42,15 @@
     margin-left: 30px;
   }
 
-  &:hover {
-    border-bottom: 2px solid black;
-  }
-
-  &:hover .nav__link-anchor {
-    color: black;
-  }
 }
 
 .nav__link-anchor {
   color: $color-text;
+  
+  &:hover {
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+  }
 }

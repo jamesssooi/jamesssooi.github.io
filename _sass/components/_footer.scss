@@ -2,11 +2,39 @@
 
 .footer {
   margin-top: 90px;
-  display: flex;
+
+  @include m-tablet {
+    display: flex;
+  }
 }
 
 .footer__email {
   font-weight: bold;
   color: black;
   font-size: 24px;
+
+  @include m-mobile {
+    display: block;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
+
+footer .nav__links {
+  @include m-mobile {
+    display: block;
+  }
+}
+
+footer .nav__link-item {
+
+  @include m-mobile {
+    display: block;
+    text-align: center;
+
+    & + .nav__link-item {
+      margin-top: 1em;
+      margin-left: 0;
+    }
+  }
 }

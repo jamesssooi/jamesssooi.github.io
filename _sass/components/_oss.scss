@@ -5,9 +5,36 @@
   padding: 30px;
   margin-bottom: 30px;
   display: flex;
+  color: $color-text;
+  position: relative;
+  transition: 0.3s ease-in-out all;
+
+  &:hover {
+    background-color: rgb(230, 230, 235);
+    text-decoration: none;
+  }
+
+  &:after {
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '\f054';
+    font-family: 'FontAwesome';
+    font-size: 24px;
+    opacity: 0;
+    transition: 0.3s ease-in-out all;
+  }
+
+  &:hover:after {
+    opacity: 1;
+    right: 30px;
+  }
 }
 
 .oss__content {
+  max-width: 85%;
+
   @include m-tablet {
     max-width: 60%;
   }
