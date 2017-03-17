@@ -11,7 +11,7 @@ layout: default
 </div>
 
 <div class="container">
-  <article>
+  <article class="project-article">
 
     <img class="project-cover" src="{{ page.cover_url }}" alt="Landscape">
 
@@ -34,4 +34,44 @@ layout: default
     {{ page.content }}
 
   </article>
+
+  <div class="project-related">
+    <span class="project-related__heading">Other works</span>
+
+    {% for work in site.works %}
+      {% if work.identifier != page.identifier %}
+        <style>
+          /* Mobile */
+          @media screen and (max-width: 767px) {
+            #project-{{ work.identifier }}.project { background-image: url({{ work.card.mobile }})}
+          }
+
+          /* Tablet */
+          @media screen and (min-width: 768px) {
+            #project-{{ work.identifier }}.project { background-image: url({{ work.card.tablet }})}
+          }
+          @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            #project-{{ work.identifier }}.project { background-image: url({{ work.card.tablet_retina }})}
+          }
+
+          /* Desktop */
+          @media screen and (min-width: 992px) {
+            #project-{{ work.identifier }}.project { background-image: url({{ work.card.desktop }})}
+          }
+          @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            #project-{{ work.identifier }}.project { background-image: url({{ work.card.desktop_retina }})}
+          }
+        </style>
+
+        <a id="project-{{work.identifier}}" class="project" href="{{ work.url }}">
+          <div class="project__title">
+            <span class="project__heading">{{ work.title }}</span>
+            <span class="project__subheading">{{ work.subtitle }}</span>
+            <span class="project__link">View {{ work.type }}</span>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+    
+  </div>
 </div>
