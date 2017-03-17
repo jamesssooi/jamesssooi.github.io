@@ -6,12 +6,17 @@
   background-position: right;
   background-size: auto 100%;
   min-height: 320px;
-  padding: 30px;
+  padding: 24px;
   display: flex;
   align-items: center;
   margin-bottom: 30px;
   transition: 0.3s ease-in-out all;
   cursor: pointer;
+  position: relative;
+
+  @include m-tablet {
+    padding: 30px;
+  }
 
   &:hover {
     background-color: rgb(230, 230, 235);
@@ -27,10 +32,28 @@
     padding-left: 18px;
     border-bottom: 1px solid black;
   }
+
+  &:after {
+    content: ' ';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(240, 240, 245);
+    opacity: 0.75;
+    z-index: 1;
+    user-select: none;
+
+    @include m-tablet {
+      display: none;
+    }
+  }
 }
 
 .project__title {
   width: 320px;
+  z-index: 2;
   @include m-desktop {
     width: 600px;
   }

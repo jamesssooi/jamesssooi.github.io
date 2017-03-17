@@ -10,8 +10,12 @@
 }
 
 .title {
-  margin: 90px 0;
+  margin: 60px 0;
   position: relative;
+
+  @include m-tablet {
+    margin: 90px 0;
+  }
   
   &--centered {
     text-align: center;
