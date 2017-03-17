@@ -45,6 +45,10 @@ article img.image--centered {
   margin-left: auto;
   margin-right: auto;
   width: auto;
+
+  @include m-mobile {
+    width: 100%;
+  }
 }
 
 
