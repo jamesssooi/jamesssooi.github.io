@@ -6,12 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: James Ooi | UI/UX Designer and Web Developer
+title: James Ooi | Digital Architect, Full-Stack Developer & UI/UX
 email: wengteikooi@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  UI/UX Designer and Web Developer driven by the passion to create things that work well.
+  James Ooi is a digital architect, full-stack developer and UI/UX designer
+  based in Kuala Lumpur that enjoys solving practical problems with innovative,
+  usable and aesthetically pleasing solutions.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jamesssooi.github.io" # the base hostname & protocol for your site
+url: "https://jamesooi.design" # the base hostname & protocol for your site
 twitter_username: jamesssooi
 github_username:  jamesssooi
 
@@ -35,5 +37,5 @@ defaults:
 markdown: kramdown
 
 # Plugins
-gems:
+plugins:
 - jekyll-autoprefixer
