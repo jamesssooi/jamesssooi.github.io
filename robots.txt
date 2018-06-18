@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /assets/files/The Mere Presence of Choices and its Effects on Aad and Ab - Ooi W.pdf
+Disallow: /assets/files/The-mere-presence-of-choices-and-its-effects-on-Aad-and-Ab_Ooi-W.pdf
