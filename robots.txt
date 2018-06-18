@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /assets/files/The Mere Presence of Choices and its Effects on Aad and Ab - Ooi W.pdf
